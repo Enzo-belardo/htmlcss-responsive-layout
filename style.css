@@ -11,20 +11,28 @@
     display: flex;
 }
 nav{
+    width: 100%;
     height: 50px;
     background-color: #0084fd;
     align-items: center;
-    justify-content: space-between;
 }
-nav>div{
-    height: 50%;
-    background-color: #ffffff;
-    margin:0 1rem;
+.container-nav{
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-nav>div{
+    width: 50%;
+    height: 50%;  
 }
 .container{
     background-color: white;
     align-items: center;
  }
+ .max-card>img{
+    width: 80%;
+}
  .card{
     width: 90%;
     height: 400px;
@@ -34,24 +42,56 @@ nav>div{
  
  .container>.max-card{ 
     width: 90%;
-    height: 600px;
     background-color:#b5ddff ;
     margin: 1rem 0;
     border-radius: 1rem;
+    align-items: center;
  }
-
+ article>button{
+    background-color: blue;
+    color: white;
+    border-radius: 2rem;
+    padding:.5rem 1rem;
+    width: 50%;
+    margin-top: 2rem;
+ }
+ .max-card>article{
+    width: 90%;
+    margin-bottom: 2rem;
+ }
+ .max-card>article>h1{
+    margin-bottom: 1rem;
+ }
+ .max-card>article>p{
+    line-height: 1.5rem;
+ }
  
 .container>.card{
     background-color: #b5ddff;
     margin: 1rem 0;
     border-radius: 1rem;
 }
-.container-two{
-    align-items: center;
-    background-color: #9792e4;
+.card>.description{
+    text-align: center;
+    padding: 0 1rem;
 }
+.icona{
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  font-size: 6rem; 
+}
+.row-one{
+    background-color: #9792e4;
+    justify-content: center;
+
+}
+.container-two{
+    width: 100%;
+    align-items: center;
+}
+
 .container-two>.card{
-    width: 90%;
     height: 600px;
     background-color:white ;
 
@@ -65,27 +105,45 @@ nav>div{
     text-align: center;
 }
 .container-three>.card{
-    width: 90%;
+    height: 300px;
     background-color:#9792e4 ;
 }
+.row-two{
+    justify-content: center;
+    margin-top: 2rem;
+    background-color:#9792e4  ;
+}
 .container-four{
+    width: 100%;
     align-items: center;
     background-color:#9792e4;
 }
 .container-four>.card{
-    width: 90%;
     background-color:white ;
 }
 .container-four>article{
-    width: 100%;
+    width: 90%;
     text-align: center;
+}
+.container-five{
+    background-color: white;
+    align-items: center;
+    margin-top: 2rem;
+}
+.container-five>.box{
+    width: 90%;
+    height: 800px;
+    border: solid 1px black;
+
 }
 
 @media screen and (min-width:760px) {
-    header{
-        width: 100%;
+    .container-nav{
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
     }
-
+   
     .container{
         flex-direction: row;
         width: 90%;
@@ -94,22 +152,78 @@ nav>div{
         justify-content: space-between;
     }
      .container>.max-card{
-      width:65%;
-      height:400px;
+       width:65%;
+       height:400px;
     }
+    
 
     .card{
-     width: 30%;
+      width: 30%;
     }
-    .container-four{
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    .container-two>.card{
+        width: 90%;
+    }
+   
+    .container-three>.card{
+        width: 90%;
+    }
+
+    .container-four{ 
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
 
     .container-four>.card{ 
         width: 40%;
-
     }
 
+ }
+
+ @media screen and (min-width: 993px){
+    .container-nav{
+        width: 75%;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .container{
+        width: 75%;
+    }
+    .container-two{
+        width: 75%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .container-two>.card{
+        width: 30%;
+    }
+
+    .container-three{
+        width: 75%;
+        align-items: center;
+        margin: auto;
+    }
+    .container-three>.card{
+        width: 100%;
+    }
+
+    .container-four{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 75%;
+        justify-content: space-between;
+    }
+    .container-four>.card{
+        width: 30%;
+    }
+
+    .container-five{
+        width: 70%;
+        margin: auto;
+        align-items: center;
+        margin-top: 2rem;
+    }
+   .container-five>.box{
+    width: 100%;
+   }
  }
