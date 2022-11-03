@@ -47,7 +47,7 @@ nav{
     align-items: center;
  }
  article>button{
-    background-color: blue;
+    background-color: #0084fd;
     color: white;
     border-radius: 2rem;
     padding:.5rem 1rem;
@@ -58,9 +58,11 @@ nav{
     width: 90%;
     margin-bottom: 2rem;
     margin: 0 1rem;
+
  }
  .max-card>article>h1{
     margin-bottom: 1rem;
+    color:#0084fd ;
  }
  .max-card>article>p{
     line-height: 1.5rem;
@@ -70,6 +72,7 @@ nav{
     background-color: #b5ddff;
     margin: 1rem 0;
     border-radius: 1rem;
+    padding: 1rem;
 }
 .card>.description{
     text-align: center;
@@ -77,6 +80,7 @@ nav{
     margin-top: 2rem;
 }
 .icona{
+    color:#0084fd ;
   width: 50%;
   text-align: center;
   margin: auto;
@@ -91,20 +95,28 @@ nav{
 .container-two{
     width: 100%;
     align-items: center;
+
 }
 
 .container-two>.card{
     color: white;
+    padding: 1rem;
+    align-items: center;
+    line-height: 1.5rem;
 }
+.card>img{
+    width: 100%;
+
+}
+
 .square{
     background: white;
     width: 90%;
     text-align: center;
     border-radius: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 2rem 0;
-    line-height: 2rem;
+    padding: 1rem;
+    line-height: 1.5rem;
+    margin: 1rem;
 }
 .square>img{
     width: 70%;
@@ -119,12 +131,18 @@ nav{
     width: 90%;
     text-align: center;
     line-height: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.container-three>article>h1{
+    color:#9792e4;
 }
 .image{
     width: 200px;
     height: 200px;
     border-radius: 100%;
     overflow: hidden;
+    margin-top: 1rem;
 }
 
 .image>img{
@@ -137,11 +155,19 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+}
+.expert>article{
+    color: white;
+}
+.expert>article>p:first-child {
+    color: white;
+    margin-bottom: 1rem;
 }
     
 .container-three>.card{
-    height: 300px;
     background-color:#9792e4 ;
+    padding: 1rem 1rem;
 }
 .card>article{
     margin-top: 2rem;
@@ -163,26 +189,62 @@ nav{
 .container-four>article{
     width: 90%;
     text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin: 2rem 0;
 }
 .col{
     width: 90%;
-    height: 400px;
     margin-top: 1rem;
     margin-bottom: 1rem;
     background-color: white;
     border-radius: 2rem;
     padding: 2rem;
+    line-height: 1.5rem;
+}
+.col>button{
+    background-color: #9792e4;
+    border-radius: 1rem;
+    color: white;
+    padding: .5rem 2rem;
+    margin-top: 2rem;
+}
+.title-col{
+    margin-bottom: 2rem;
+    line-height: 3rem;
+    color: #9792e4;
 }
 .container-five{
+    border: solid 1px black;
     background-color: white;
     align-items: center;
     margin-top: 2rem;
 }
 .container-five>.box{
     width: 90%;
-    height: 800px;
-    border: solid 1px black;
-
+    
+    padding: 1rem;
+    line-height: 2rem;
+}
+.container-five>.box>h1{
+    margin: 2rem 0;
+}
+.box>p:last-child{
+    margin-top: 2rem 0;
+}
+.box-two{
+    padding:2rem 2rem;
+}
+.box-two>h2{
+    margin-top: 1rem;
+    color: #9792e4;
+}
+.box-two>button{
+    background-color: #9792e4;
+    border-radius: 2rem;
+    padding: .5rem 2rem;
+    margin-top: 1rem;
+    color: white;
 }
 
 @media screen and (min-width:760px) {
@@ -244,6 +306,22 @@ nav{
     .container-four>.col{ 
         width: 40%;
     }
+    .container-five{
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    .container-five>.box{
+        width: 60%;
+
+    }
+    .container-five>.box-two{
+        width: 30%;
+        height: 50%;
+        justify-content: flex-start;
+
+    }
+
 
  }
 
@@ -272,8 +350,19 @@ nav{
  
     .container-two{
         width: 75%;
+        height: 600px;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+    .container-two>.card{
+        width: 35%;
+        align-items: flex-start;
+        
+    }
+    
+    .container-two>.square{
+        width: 35%;
+        align-items: flex-end;
     }
 
     .container-three{
@@ -302,6 +391,6 @@ nav{
         margin-top: 2rem;
     }
    .container-five>.box{
-    width: 100%;
+     width: 100%;
    }
  }
