@@ -113,13 +113,39 @@ nav{
     margin-top: 2rem;
     align-items: center;
     background-color: white ;
-}
-.container-three>article{
     text-align: center;
 }
+.container-three>article{
+    width: 90%;
+    text-align: center;
+    line-height: 2rem;
+}
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.image>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.expert{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
 .container-three>.card{
     height: 300px;
     background-color:#9792e4 ;
+}
+.card>article{
+    margin-top: 2rem;
+
 }
 .row-two{
     justify-content: center;
@@ -137,6 +163,15 @@ nav{
 .container-four>article{
     width: 90%;
     text-align: center;
+}
+.col{
+    width: 90%;
+    height: 400px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2rem;
 }
 .container-five{
     background-color: white;
@@ -188,7 +223,16 @@ nav{
     }
     .card>img{
         width: 70%;
-
+    }
+    .expert{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    image{
+        width: 30%;
+    }
+    .expert>article{
+        width: 60%;
     }
 
     .container-four{ 
@@ -197,7 +241,7 @@ nav{
       justify-content: space-around;
     }
 
-    .container-four>.card{ 
+    .container-four>.col{ 
         width: 40%;
     }
 
@@ -218,9 +262,11 @@ nav{
     }
     .max-card>article{
         width: 40%;
+        vertical-align: super;
     }
     .max-card>img{
         width: 50%;
+        justify-content: flex-end;
     }
 
  
@@ -245,7 +291,7 @@ nav{
         width: 75%;
         justify-content: space-between;
     }
-    .container-four>.card{
+    .container-four>.col{
         width: 30%;
     }
 
