@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .flex-c{
     display: flex;
     flex-direction: column;
@@ -16,6 +17,9 @@ nav{
     background-color: #0084fd;
     align-items: center;
 }
+ul{
+    display: none;
+}
 .container-nav{
     width: 90%;
     margin: auto;
@@ -26,17 +30,24 @@ nav{
     width: 50%;
     height: 50%;  
 }
+.container-nav>button{
+    display: none;
+}
+
 .container{
     background-color: white;
     align-items: center;
+    margin-top: 2rem;
  }
- .max-card>img{
+
+ .jumbo>img{
     width: 80%;
+    
 }
  .card{
     width: 90%;
     margin: 1rem 0;
-    border-radius: 1rem;
+    border-radius: 3rem;
  }
  
  .container>.max-card{ 
@@ -57,7 +68,7 @@ nav{
  .max-card>article{
     width: 90%;
     margin-bottom: 2rem;
-    margin: 0 1rem;
+    margin:2rem 1rem;
 
  }
  .max-card>article>h1{
@@ -79,13 +90,18 @@ nav{
     padding: 0 1rem;
     margin-top: 2rem;
 }
+.description>h1{
+    color: #0084fd;
+    margin-bottom: 1rem;
+}
+
 .icona{
-    color:#0084fd ;
+  color:#0084fd ;
   width: 50%;
   text-align: center;
   margin: auto;
   font-size: 6rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .row-one{
     background-color: #9792e4;
@@ -96,6 +112,21 @@ nav{
     width: 100%;
     align-items: center;
 
+}
+.card>h1{
+    padding: 2rem 0;
+    font-size: 2rem;
+
+}
+.square>h1{
+    padding: 2rem 0;
+
+}
+.square>div>i{
+    border-radius: 100%;
+    padding: 1rem 1rem;
+    background-color: #9792e4;
+    margin-top: 1rem;
 }
 
 .container-two>.card{
@@ -169,6 +200,9 @@ nav{
     background-color:#9792e4 ;
     padding: 1rem 1rem;
 }
+.container-three>article>h1{
+    margin: 1.5rem 0;
+}
 .card>article{
     margin-top: 2rem;
 
@@ -215,7 +249,6 @@ nav{
     color: #9792e4;
 }
 .container-five{
-    border: solid 1px black;
     background-color: white;
     align-items: center;
     margin-top: 2rem;
@@ -246,6 +279,52 @@ nav{
     margin-top: 1rem;
     color: white;
 }
+.container-six{
+    text-align: center;
+    background-color:#9792e4;
+    justify-content: center;
+}
+.article{
+    width: 90%;
+    padding: 2rem 0;
+    text-align: center;
+}
+.container-six>.article>p{
+    color: white;
+    line-height: 1.5rem;
+}
+.container-six>.article>p:first-child{
+    font-size: 1.5rem;
+    opacity: .6;
+}
+.simple{
+    font-size: 2rem;
+}
+.free{
+    font-size: 3.5rem;
+    color: orange;
+    margin: 1rem 0;
+}
+.article>button{
+    border: solid 1px black;
+    background-color: white;
+    color: #0084fd;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin: 1rem 0;
+}
+
+footer{
+    background-color: black;
+    justify-content: center;
+}
+footer>.article>p{
+    color: white;
+}
+footer>.article>p:last-child{
+    color: white;
+    margin-top: 3rem;
+}
 
 @media screen and (min-width:760px) {
     .container-nav{
@@ -262,6 +341,7 @@ nav{
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: stretch;
+        margin-top: 1rem;
     }
      .container>.max-card{
        width: 65%;
@@ -327,27 +407,53 @@ nav{
 
  @media screen and (min-width: 993px){
     .container-nav{
+        display: flex;
         width: 75%;
         margin: auto;
         justify-content: space-between;
     }
+    .container-nav>i{
+        display: none;
+    }
+    ul{
+        text-decoration: none;
+        display: inline-block;
+        
+    }
+    li{
+        display: inline-block;
+        color: white;
+        margin: 0 1rem;
+    }
+    
+    .container-nav>button{
+        display: inline;
+        border: solid 1px black;
+        border-radius: 2rem;
+        background-color: white;
+        color: black;
+        padding: .5rem 1rem;
+
+    }
+
     .container{
         width: 75%;
     }
     .max-card{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
     .max-card>article{
         width: 40%;
-        vertical-align: super;
+        margin-bottom: 5rem;
+        
     }
-    .max-card>img{
+    .jumbo{
         width: 50%;
-        justify-content: flex-end;
+        height: 60%;
     }
 
- 
     .container-two{
         width: 75%;
         height: 600px;
@@ -393,4 +499,8 @@ nav{
    .container-five>.box{
      width: 100%;
    }
+   .article{
+    width: 50%;
+    padding: 2rem 0;
+}
  }
